@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #e5e7eb;
+}
+
+header {
+  width: 340px;
+  height: 60px;
+  border: 2px solid red;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #b1e8f1;
+  box-shadow: 0px 0px 5px black;
+}
+
+#container {
+  background-color: #b1e8f1;
+  box-shadow: 0px 0px 5px black;
+  position: relative;
+}
+
+.snack {
+  background-color: hsl(250, 80%, 70%);
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  position: absolute;
+}
+
+/*.head {
+    background-color: hsl(250, 80%, 70%);
+}*/
+
+#check_point {
+    background-color: hsl(200, 40%, 40%);
+    width: 14px;
+    height: 14px;
+    border: 4px solid black;
+    border-radius: 2px;
+    position: absolute;
+}
+
+
+
+
+
+#control {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 colonnes */
+  grid-template-rows: 1fr 1fr 1fr;   /* 3 lignes */
+  width: 200px; /* Taille de la zone */
+  height: 200px;
+  gap: 5px; /* Espacement entre les boutons */
+  margin: 20px auto; /* Centrage de la manette */
+}
+
+.button {
+  background-color: gray; /* Couleur des boutons */
+  width: 100%; /* Remplit la cellule */
+  height: 100%; /* Remplit la cellule */
+  border-radius: 5px; /* Bords arrondis */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Effet d'ombre */
+}
+
+.up {
+  grid-column: 2; /* Colonne du milieu */
+  grid-row: 1;    /* Ligne du haut */
+}
+
+.right {
+  grid-column: 3; /* Colonne de droite */
+  grid-row: 2;    /* Ligne du milieu */
+}
+
+.down {
+  grid-column: 2; /* Colonne du milieu */
+  grid-row: 3;    /* Ligne du bas */
+}
+
+.left {
+  grid-column: 1; /* Colonne de gauche */
+  grid-row: 2;    /* Ligne du milieu */
+}
