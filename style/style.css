@@ -37,9 +37,9 @@ header {
   position: absolute;
 }
 
-/*.head {
+.head {
     background-color: hsl(250, 80%, 70%);
-}*/
+}
 
 #check_point {
     background-color: hsl(200, 40%, 40%);

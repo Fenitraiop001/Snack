@@ -82,11 +82,8 @@ function game_over() {
     snack = []
 
     for(var i=1; i<5; i++) {
-        snackStyle = i
-        snack[i] = check_point((4-i)*L, 0)
-        if(snackStyle%colorSpace[0] == 0) {
-            snack[i].style.backgroundColor = 'red' //colorSpace[1]
-        }
+        snack[i] = check_point((4-i)*20, 0)
+        snack[i].style.backgroundColor = 'red'
         snacks.appendChild(snack[i])
     }
 
